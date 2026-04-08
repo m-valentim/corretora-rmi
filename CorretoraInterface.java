@@ -3,7 +3,6 @@ import java.rmi.RemoteException;
 import java.util.Map;
 
 public interface CorretoraInterface extends Remote {
-    // Agora retornam boolean para confirmar sucesso ou falha
     boolean cadastrarAcao(String nome, double preco, ClienteInterface emissor) throws RemoteException;
     double consultarPreco(String nome) throws RemoteException;
     Map<String, Double> listarAcoes() throws RemoteException;
